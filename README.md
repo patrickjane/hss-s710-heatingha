@@ -1,6 +1,6 @@
 # HSS + Homeassistant Heating
 
-Skill zur Sprachsteuerung der Heizung / Climate-Komponente über Home Assistant (https://www.home-assistant.io/). Nutzt die Home Assistant REST API. 
+Skill zur Sprachsteuerung der Heizung / Climate-Komponente über Home Assistant (https://www.home-assistant.io/). Nutzt die Home Assistant REST API.
 
 ## Installation
 
@@ -22,6 +22,7 @@ Installing dependencies ...
 Initializing config.ini ...
 Section 'skill'
 Enter value for parameter 'hass_token': xxxxxx
+Enter value for parameter 'entity_dict': {"arbeitszimmer": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_2", "wohnzimmer": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_4", "flur": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat_3", "schlafzimmer": "climate.eurotronic_eur_spiritz_wall_radiator_thermostat_heat"}
 
 Skill 'hss-s710-heatingha' successfully installed.
 

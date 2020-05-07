@@ -17,7 +17,7 @@ import skill
 
 if __name__ == "__main__":
     skill = skill.Skill()
-    #skill.run()
+    skill.run()
 
-    res = skill.handle("message", "", "default", "s710:isHeatingOn", {"room_id": "arbeitszimmer"})
-    print(res)
+    # res = skill.handle("message", "", "default", "s710:isHeatingOn", {"room_id": "arbeitszimmer"})
+    # print(res)
