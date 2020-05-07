@@ -1,0 +1,4 @@
+[skill]
+hass_host=http://localhost:8123
+hass_token=
+entity_dict=
