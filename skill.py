@@ -89,14 +89,14 @@ class Skill(hss.BaseSkill):
     # get_intentlist (overwrites BaseSkill.get_intentlist)
     # --------------------------------------------------------------------------
 
-    def get_intentlist(self):
+    async def get_intentlist(self):
         return self.my_intents
 
     # --------------------------------------------------------------------------
     # handle (overwrites BaseSkill.handle)
     # --------------------------------------------------------------------------
 
-    def handle(self, request, session_id, site_id, intent_name, slots):
+    async def handle(self, request, session_id, site_id, intent_name, slots):
         room_id = slots["room_id"] if "room_id" in slots else None
         temperature = int(slots["temperature"]) if "temperature" in slots else None
 
@@ -114,7 +114,7 @@ class Skill(hss.BaseSkill):
             self.log.error("Failed to execute action ({})".format(e))
             response_message = 'Aktion konnte nicht durchgeführt werden'
 
-        return self.done(session_id, site_id, intent_name, response_message, "de_DE")
+        return self.answer(session_id, site_id, response_message, "de_DE")
 
     # -------------------------------------------------------------------------
     # process
