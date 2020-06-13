@@ -1,0 +1,11 @@
+{
+   "skillname": "hss-s710-heatinha",
+   "platform": "hss-python",
+   "type": "automation",
+   "author": "Patrick Jane",
+   "repository": "https://github.com/patrickjane/hss-s710-heatingha",
+   "intents": ["s710:isHeatingOn","s710:enableHeating","s710:disableHeating","s710:setTemperature"],
+   "shortDescription": "Control heating in home assistant",
+   "version": "1.0.0",
+   "language": "de_DE"
+}

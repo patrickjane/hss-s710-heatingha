@@ -86,13 +86,6 @@ class Skill(hss.BaseSkill):
             self.entity_dict = {}
 
     # --------------------------------------------------------------------------
-    # get_intentlist (overwrites BaseSkill.get_intentlist)
-    # --------------------------------------------------------------------------
-
-    async def get_intentlist(self):
-        return self.my_intents
-
-    # --------------------------------------------------------------------------
     # handle (overwrites BaseSkill.handle)
     # --------------------------------------------------------------------------
 
@@ -114,7 +107,7 @@ class Skill(hss.BaseSkill):
             self.log.error("Failed to execute action ({})".format(e))
             response_message = 'Aktion konnte nicht durchgeführt werden'
 
-        return self.answer(session_id, site_id, response_message, "de_DE")
+        return self.answer(session_id, site_id, response_message)
 
     # -------------------------------------------------------------------------
     # process
